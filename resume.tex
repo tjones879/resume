@@ -6,19 +6,18 @@
 \begin{resume}
     \section{\mysidestyle Contact\\Information}
 
-    Phone: (970) 261-9425 \hfill IRC@freenode: tdjones \hfill Github: tjones879 \\
-    \noindent Email: tdjones879@gmail.com  \hfill \vspace{0mm}\\\vspace{-4.5mm}
+    Phone: (970) 261-9425 \hfill Email: tdjones879@gmail.com  \hfill Github/Gitlab: tjones879\vspace{0mm}\\\vspace{-4.5mm}
 
     \section{\mysidestyle Work\\Experience}
 
     \textbf{FFmpeg} \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Vorbis Encoder} \hfill \textbf{Feb 2017 -- August 2017}\\
+    \textsl{Google Summer of Code Participant -- Vorbis Encoder} \hfill \textbf{Feb 2017 -- August 2017}\\
     Improved the encoding quality and speed of FFmpeg's native Vorbis
     encoder by redesigning major components and implementing a new
     psychoacoustic model.
 
 	\begin{itemize}
-	\item Built a custom psychacoustical model capable of detecting
+	\item Built a custom psychoacoustical model capable of detecting
               transient signals and dynamically switching encoding modes.
 	\item Implemented noise normalization to generate a gaussian noise
 	      profile and rewrote residue encoding to minimize quantization
@@ -31,7 +30,7 @@
     \section{\mysidestyle Other\\Projects}
 
     \textbf{Autonomous Drone}\\
-    Built an autonomous drone from bare components and developed an
+    Built a semi-autonomous drone from bare components and developed an
     off-machine flight controller.
 
 	\begin{itemize}
@@ -44,46 +43,46 @@
 
     \textbf{Radio Com}\\
     Building an embedded device capable of interfacing with Linux devices and
-    Android phones for communicating over radio.
+    Android phones for communicating over long-range encrypted radio.
 
-	\begin{itemize}
-	\item Utilizing LoRa modulation to communicate over 10km between
-	      devices.
-	\item Developed an Android application with support for end-to-end
-	      encrypted communication.
-	\item Writing linux drivers to support online-data requests from
-	      USB.
+        \begin{itemize}
+        \item Developed a secure and error-resistant protocol for communication
+              over USB and over LoRa radio.
+        \item Developing a cross-platform C++ application for end-to-end encrypted
+              communication.
+        \item Writing linux drivers to emulate a virtual serial port that supports
+              data and control requests over USB.
 	\end{itemize}
 
 
-    \textbf{PetroMatch}, Grand Junction, CO \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Data Analyst, Backend Developer} \hfill \textbf{Mar 2017}\\
-    Worked on a small team to utilize open-source data for oil and gas companies
-    to fully utilize geographical, economic, and business license data.
+    \textbf{re-mark}\\
+    Built a website that allows users to annotate with any page on the internet
+    with persistence.
 
-	\begin{itemize}
-	\item Built a custom ORDMS for PostGIS information suitable for web and
-	      mobile development
-	\item Built an internal API for mapping data in different projections and
-	      formats
-	\end{itemize}
-    
+        \begin{itemize}
+        \item Built a REST API in Go for managing user-supplied data in MongoDB.
+        \item Utilized xxHash and gzip to cache external pages for users in
+              a safe and memory efficient manner.
+        \item Integrated Google's API for user authentication.
+        \end{itemize}
+
     \section{\mysidestyle College\\Education}
 
     \textbf{Colorado Mesa University}, Grand Junction, CO \vspace{2mm}\\\vspace{1mm}%
-    \textsl{B.S., Computer Science} GPA - 4.0 \hfill \textbf{Aug 2014 -- May 2018}\\
-    
+    \textsl{B.S., Computer Science} GPA - 4.0 \hfill \textbf{Aug 2014 -- May 2018}
+
     \textbf{Colorado School of Mines}, Golden, CO \vspace{2mm}\\\vspace{1mm}%
     \textsl{Chemical Engineering} GPA - 3.83 \hfill \textbf{Aug 2015 -- May 2016}\\
     Received recognition for developing a simulation engine for municipal waste
     reactors that could be embedded within existing data work-flows for energy
     companies and researchers.
 
-    \section{\mysidestyle Programming\\Knowledge}
+    \section{\mysidestyle Technical\\Skills}
 
-    \emph{Languages:} C, C++, C\#, Python\\
-    \emph{Architectures:} ARM, AVR\\
-    \emph{Other Knowledge:} Kernel Development, Embedded Linux,
-                            LoRa, USB 2.0\\
+    \emph{Languages:} C, C++, Python, Go, C\#\\
+    \emph{Architectures:} ARM, AVR, PIC\\
+    \emph{Tools:} Git, Sparse, Valgrind, GCC/LLVM\\
+    \emph{Protocols:} LoRa, USB, SPI, I2C, TCP/IP\\
+    \emph{Other Knowledge:} Kernel Development, Embedded Linux, RF, SDR\\
 \end{resume}
 \end{document}
