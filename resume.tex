@@ -6,12 +6,30 @@
 \begin{resume}
     \section{\mysidestyle Contact\\Information}
 
-    Phone: (970) 261-9425 \hfill Email: tdjones879@gmail.com  \hfill Github/Gitlab: tjones879\vspace{0mm}\\\vspace{-4.5mm}
+    Phone: (970) 261-9425 \hfill Email: me@tjones.dev  \hfill Github: tjones879\vspace{0mm}\\\vspace{-4.5mm}
 
     \section{\mysidestyle Work\\Experience}
 
-    \textbf{FFmpeg} \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Google Summer of Code Participant -- Vorbis Encoder} \hfill \textbf{Feb 2017 -- August 2017}\\
+    \textbf{AMERGINT Technologies} \vspace{1mm}\\\vspace{1mm}%
+    \textsl{Development Engineer, Launch/Range Systems} \hfill \textbf{July 2018 -- Present}\\
+      Designed, implemented, and tested mission-critical and safety-critical systems written
+      in C++ and Python based on customer specifications and requirements.
+      \begin{itemize}
+      \item Lead the design and development of simulation and hardware-in-the-loop testing platforms
+            for active development of prototype defense technologies.
+      \item Designed and implemented next-generation software-based LDPC decoders capable of
+            multi-gigabit downlink rates.
+      \item Optimized the performance of telemetry processing systems by 
+            up to 700\% while improving meaningful test coverage and documentation by 35\%.
+      \item Designed and implemented the rearchitecture of IRIG 106-compliant
+            Chapter 10 data recorders for rapid development of new recorder product lines.
+      \item Performed certification and factory acceptance testing of multi-million dollar
+            satellite test systems.
+      \end{itemize}
+
+
+    \textbf{FFmpeg} \vspace{1mm}\\\vspace{1mm}%
+    \textsl{Google Summer of Code Participant -- Vorbis Encoder} \hfill \textbf{Feb 2017 -- Aug 2017}\\
     Improved the encoding quality and speed of FFmpeg's native Vorbis
     encoder by redesigning major components and implementing a new
     psychoacoustic model.
@@ -19,71 +37,46 @@
 	\begin{itemize}
 	\item Built a custom psychoacoustical model capable of detecting
               transient signals and dynamically switching encoding modes.
-	\item Implemented noise normalization to generate a gaussian noise
-	      profile and rewrote residue encoding to minimize quantization
-	      error.
+	\item Implemented noise normalization to generate a perceived gaussian noise
+            profile and designed residue encoding to minimize
+            quantization error.
 	\item Rewrote the stereo coupling to dynamically switch between
 	      various lossy and lossless modes.
-	\item Added foundational support for arbitrary channel mappings.
 	\end{itemize}
 
     \section{\mysidestyle Other\\Projects}
 
     \textbf{Flying Drone}\\
-    Built a semi-autonomous drone from bare components and developed an
-    off-machine flight controller.
+    Built an autonomous drone from bare components and a custom real-time operating environment.
 
-	\begin{itemize}
-	\item Utilized radio communication for transmitting
-	      flight directions and data between an embedded linux
-	      device and embedded microcontroller.
-	\item Implemented custom PID controls to maintain flight stability
-	      using on-board sensor data.
-	\end{itemize}
-
-    \textbf{Radio Com}\\
-    Built an embedded device capable of interfacing with Linux devices and
-    Android phones for communicating over long-range encrypted radio.
-
-        \begin{itemize}
-        \item Developed a secure and error-resistant protocol for communication
-              over USB and over LoRa radio.
-        \item Developed a cross-platform C++ application and GUI for end-to-end
-              encrypted communication.
-        \item Wrote linux drivers to emulate a virtual serial port that supports
-              data and control requests over USB.
-	\end{itemize}
-
+    \begin{itemize}
+      \item Utilized FHSS with a custom packetized protocol for efficient command and control,
+            and telemetry in populated and noisy ISM bands.
+      \item Designed kernel drivers to minimize the latency of subsystem components in centralized
+            ground stations.
+      \item Developed full environment and sensor simulations for faster iteration of closed loop
+            controls and vehicle localization algorithms.
+    \end{itemize}
 
     \textbf{Project Armoire}\\
     Built a homework and test platform for students learning to code.
 
-        \begin{itemize}
-        \item Utilized Docker and AppArmor to securely execute arbitrary student code
-              and run unit tests in light-weight sandboxes behind a REST API.
+    \begin{itemize}
+        \item Utilized Docker and AppArmor to securely execute arbitrary code
+              and run unit tests in light-weight sandboxes behind a RESTful API.
         \item Automatically cross-referenced code submissions to detect code-similarity
-              and probability of plagiarism.
-        \item Built a React user interface using capable of running both on
-              the desktop and in the browser.
-        \end{itemize}
+              and probability of plagiarism based on a corpus of previous assignments.
+    \end{itemize}
 
     \section{\mysidestyle College\\Education}
 
-    \textbf{Colorado Mesa University}, Grand Junction, CO \vspace{2mm}\\\vspace{1mm}%
-    \textsl{B.S., Computer Science} GPA - 4.0 \hfill \textbf{Aug 2014 -- May 2018}
-
-    \textbf{Colorado School of Mines}, Golden, CO \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Chemical Engineering} GPA - 3.83 \hfill \textbf{Aug 2015 -- May 2016}\\
-    Received recognition for developing a simulation engine for municipal waste
-    reactors that could be embedded within existing data work-flows for energy
-    companies and researchers.
+    \textbf{Colorado Mesa University}, Grand Junction, CO \vspace{1mm}\\\vspace{1mm}%
+    \textsl{B.S. Computer Science} GPA - 4.0 \hfill \textbf{Aug 2014 -- May 2018}
 
     \section{\mysidestyle Technical\\Skills}
 
-    \emph{Languages:} C, C++, Python, JavaScript, Go\\
-    \emph{Architectures:} ARM, AVR, PIC\\
-    \emph{Tools:} Git, Valgrind, GCC/LLVM\\
-    \emph{Protocols:} LoRa, USB, BTLE, Zigbee, TCP/IP\\
-    \emph{Other Knowledge:} Kernel Development, Embedded Linux, FreeRTOS, SQL, DSP\\
+    \emph{Languages:} C, C++, Python, Rust\\
+    \emph{Tools:} Git/SVN, Valgrind, GCC/LLVM, perf, eBPF\\
+    \emph{Other Knowledge:} Linux and RTOS Kernel Development, Embedded Linux, Software-defined networking\\
 \end{resume}
 \end{document}
