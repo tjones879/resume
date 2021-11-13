@@ -2,7 +2,7 @@
 \usepackage[hidelinks]{hyperref}
 
 \begin{document}
-\name{\Large Tyler D Jones}
+\name{\Large Tyler Jones}
 \begin{resume}
     \section{\mysidestyle Contact\\Information}
 
@@ -11,28 +11,27 @@
     \section{\mysidestyle Work\\Experience}
 
     \textbf{AMERGINT Technologies} \vspace{1mm}\\\vspace{1mm}%
-    \textsl{Development Engineer, Launch/Range Systems} \hfill \textbf{July 2018 -- Present}\\
-      Designed, implemented, and tested mission-critical and safety-critical systems written
-      in C++ and Python based on customer specifications and requirements.
+    \textsl{Systems Engineer, Launch/Range Systems} \hfill \textbf{July 2018 -- Present}\\
+      Designed, implemented, and delivered mission-critical and safety-critical systems on strict timelines
+      written in C++ and Python.
       \begin{itemize}
-      \item Lead the design and development of simulation and hardware-in-the-loop testing platforms
-            for active development of prototype defense technologies.
-      \item Designed and implemented next-generation software-based LDPC decoders capable of
+      \item Lead the design and development of more than \$8 MM of novel hardware-in-the-loop testing platforms
+            for modern hypersonic and missile defense programs.
+      \item Designed and implemented a next-generation software-based LDPC decoder architecture capable of
             multi-gigabit downlink rates.
-      \item Optimized the performance of telemetry processing systems by 
-            up to 700\% while improving meaningful test coverage and documentation by 35\%.
-      \item Designed and implemented the rearchitecture of IRIG 106-compliant
-            Chapter 10 data recorders for rapid development of new recorder product lines.
-      \item Performed certification and factory acceptance testing of multi-million dollar
-            satellite test systems.
+      \item Optimized the performance of telemetry processing decommutation and commutation subsystems
+            by up to 20x for use in range safety environments.
+      \item Built a new line of IRIG 106 Chapter 10 data recorders for rapid development of
+            multi-gigabit data recording and processing product lines.
+      \item Lead development of an embedded, network-enabled IO and RF test equipment product line.
       \end{itemize}
 
 
     \textbf{FFmpeg} \vspace{1mm}\\\vspace{1mm}%
     \textsl{Google Summer of Code Participant -- Vorbis Encoder} \hfill \textbf{Feb 2017 -- Aug 2017}\\
     Improved the encoding quality and speed of FFmpeg's native Vorbis
-    encoder by redesigning major components and implementing a new
-    psychoacoustic model.
+    encoder by redesigning major components and implementing new
+    psychoacoustic models.
 
 	\begin{itemize}
 	\item Built a custom psychoacoustical model capable of detecting
@@ -41,7 +40,7 @@
             profile and designed residue encoding to minimize
             quantization error.
 	\item Rewrote the stereo coupling to dynamically switch between
-	      various lossy and lossless modes.
+	      various lossy and lossless encoding modes.
 	\end{itemize}
 
     \section{\mysidestyle Other\\Projects}
@@ -50,23 +49,36 @@
     Built an autonomous drone from bare components and a custom real-time operating environment.
 
     \begin{itemize}
-      \item Utilized FHSS with a custom packetized protocol for efficient command and control,
-            and telemetry in populated and noisy ISM bands.
-      \item Designed kernel drivers to minimize the latency of subsystem components in centralized
+      \item Utilized OFDM with a custom packetized protocol for efficient command, control,
+            and telemetry in ISM bands.
+      \item Built Linux kernel drivers to minimize the latency of subsystem components in centralized
             ground stations.
-      \item Developed full environment and sensor simulations for faster iteration of closed loop
-            controls and vehicle localization algorithms.
+      \item Developed full environment and sensor simulations for faster iteration of state estimation
+            and vehicle localization algorithms.
     \end{itemize}
 
-    \textbf{Project Armoire}\\
-    Built a homework and test platform for students learning to code.
+    \textbf{Stream Processing Language}\\
+    Designing a novel compiler and domain specific language for efficient synchronous data flow processing.
 
     \begin{itemize}
-        \item Utilized Docker and AppArmor to securely execute arbitrary code
-              and run unit tests in light-weight sandboxes behind a RESTful API.
-        \item Automatically cross-referenced code submissions to detect code-similarity
-              and probability of plagiarism based on a corpus of previous assignments.
+        \item Employed scalar evolution analysis for alias detection and identification of
+              instruction-level parallelism.
+        \item Designing algorithms for aggressive auto-vectorization and pipelining of numeric code.
+        \item Implementing optimized static scheduling of stream processing applications to maintain
+              memory locality and efficient cache utilization.
     \end{itemize}
+
+\iffalse
+    \textbf{Auto Chess}\\
+    Designed a self-contained autonomous chess board with integration with popular chess websites.
+
+    \begin{itemize}
+        \item Designed and integrated PCB's for detection and management of board state.
+        \item Integrated web API's for play against computer engines and online players.
+        \item Developed communication protocols for control of real-time subsystems from an embedded
+              Linux platform.
+    \end{itemize}
+\fi
 
     \section{\mysidestyle College\\Education}
 
@@ -76,7 +88,7 @@
     \section{\mysidestyle Technical\\Skills}
 
     \emph{Languages:} C, C++, Python, Rust\\
-    \emph{Tools:} Git/SVN, Valgrind, GCC/LLVM, perf, eBPF\\
-    \emph{Other Knowledge:} Linux and RTOS Kernel Development, Embedded Linux, Software-defined networking\\
+    \emph{Tools:} Git/SVN, Valgrind, GCC/LLVM, perf, eBPF, Docker\\
+    \emph{Other Knowledge:} Linux and RTOS Kernel Development, Embedded Linux, Software-defined radio\\
 \end{resume}
 \end{document}
